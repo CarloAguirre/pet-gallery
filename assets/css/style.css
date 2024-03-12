@@ -1,0 +1,156 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    z-index: 1;
+    background-color: rgb(23, 21, 21);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif, 'Times New Roman', Times, serif;
+}
+
+/* nav {
+    background-color: rgb(23, 21, 21);
+    display: flex;
+    padding: 12px;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 80px;
+    padding-right: 80px;
+    position: fixed;
+    z-index: 1000;
+} */
+
+nav {
+    background-color: rgb(23, 21, 21);
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    padding: 12px 80px; 
+    position: fixed;
+    right: 0;
+    left: 0;
+    z-index: 1000;
+    max-height: 105px;
+}
+
+nav i {
+    color: aliceblue;
+}
+
+.header-content {
+    display: flex;
+    gap: 1rem;
+    font-weight: 700;
+}
+.header-content_hover a:hover {
+    color: burlywood;
+    transition: ease .2s;
+}
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    color: aliceblue;
+    font-weight: 700;
+}
+
+h1 {
+    color: white;
+    text-align: center;
+    margin: 1rem;
+}
+nav a{
+    color: aliceblue;
+    text-decoration: none;
+}
+.nav-hr {
+   padding-top: 105px; 
+}
+
+.gallery{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    min-width: 100vw;
+    margin: 6rem 0;
+}
+.image {
+    width: 400px;
+    height: 300px;
+    background-size: cover;
+    background-position: center;
+    filter: brightness(1);
+}
+.image:hover {
+    filter: brightness(0.4);
+    cursor: pointer;
+    transition: 0.35s;
+}
+
+.image:hover::after {
+    content: "Ver mas...";
+    font-size: larger;
+    font-weight: 900;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+    color: whitesmoke;
+}
+
+.image1{
+    background-image: url("../imgs/mascota1.jpg");
+}
+.image2{
+    background-image: url("../imgs/mascota2.jpg");
+}
+.image3{
+    background-image: url("../imgs/mascota3.jpg");
+}
+.image4{
+    background-image: url("../imgs/mascota4.jpg");
+}
+.image5{
+    background-image: url("../imgs/mascota5.jpg");
+}
+.image6{
+    background-image: url("../imgs/mascota6.jpg");
+}
+.image7{
+    background-image: url("../imgs/mascota7.jpg");
+}
+.image8{
+    background-image: url("../imgs/mascota8.jpg");
+}
+
+.caracteristicas {
+    display: flex;
+    margin: 6rem 20%;
+    padding: 4rem;
+    background-color:burlywood;
+    gap: 30px;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.caracteristica {
+    display: flex;
+    flex-direction: column;
+    row-gap: 2rem;
+    justify-content: center;
+    align-items: center;
+    width: 250px ;
+    min-width: 200px ;
+}
+
+footer {
+    height: 3rem;
+    line-height: 3rem;
+    text-align: center;
+    color: aliceblue;
+}
+
+
+
